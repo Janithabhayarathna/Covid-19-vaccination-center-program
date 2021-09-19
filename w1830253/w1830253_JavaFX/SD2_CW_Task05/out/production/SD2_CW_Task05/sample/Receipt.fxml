@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReceiptController">
+   <children>
+      <ImageView fitHeight="509.0" fitWidth="637.0" layoutX="-127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/sinopharm.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="187.0" layoutY="1.0" prefHeight="30.0" prefWidth="144.0" text="Receipt" textAlignment="CENTER" textFill="#66e5ff" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="114.0" text="First Name                 : " textFill="#119bd6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="161.0" text="Surname                    : " textFill="#119bd6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="211.0" text="Age                             : " textFill="#119bd6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="257.0" text="City                             : " textFill="#04b8ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="308.0" text="NIC/Passport No.      :" textFill="#00b7ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="359.0" text="Requested Vaccine   :" textFill="#119bd6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="441.0" text="Time :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="441.0" text="Date : " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fname2" alignment="CENTER" layoutX="285.0" layoutY="114.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="close" layoutX="441.0" layoutY="13.0" mnemonicParsing="false" onAction="#func_close" style="-fx-background-color: red; -fx-background-radius: 40px;" text="Close" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="sname2" alignment="CENTER" layoutX="285.0" layoutY="161.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="age2" alignment="CENTER" layoutX="285.0" layoutY="211.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="city2" alignment="CENTER" layoutX="285.0" layoutY="257.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="nic2" alignment="CENTER" layoutX="285.0" layoutY="308.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="vaccine2" alignment="CENTER" layoutX="285.0" layoutY="359.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="date" alignment="CENTER" layoutX="69.0" layoutY="441.0" prefHeight="27.0" prefWidth="144.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: red; -fx-border-radius: 30px; -fx-border-width: 2;" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="time" alignment="CENTER" layoutX="343.0" layoutY="441.0" prefHeight="27.0" prefWidth="144.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: red; -fx-border-radius: 30px; -fx-border-width: 2;" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="67.0" text=" Booth Number          :" textFill="#119bd6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="booth2" alignment="CENTER" layoutX="285.0" layoutY="67.0" prefHeight="27.0" prefWidth="167.0" style="-fx-background-radius: 30px; -fx-background-color: white; -fx-text-alignment: center; -fx-border-color: #66e5ff; -fx-border-radius: 30px; -fx-border-width: 3;" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

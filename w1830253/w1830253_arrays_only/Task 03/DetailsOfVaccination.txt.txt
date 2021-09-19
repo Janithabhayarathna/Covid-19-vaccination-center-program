@@ -1,0 +1,3 @@
+Vaccination booth info - 
+ First names-[nimal, empty, fr, empty, kamal, empty]Patient's surnames - [lansa, empty, wr, empty, frw, empty]
+ Number of remaining vaccines = 146
